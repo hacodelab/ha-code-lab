@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HA Code Lab - Learn programming languages and ICT skills through comprehensive tutorials and courses">
+    <meta name="keywords" content="programming, coding, C, HTML, Python, Java, C++, ICT, cybersecurity">
+    <title>HA Code Lab - Learn Programming & ICT Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>HA Code Lab</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#ict-services" class="nav-link">ICT Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://youtube.com/@hacodelab?si=zr6g3zUek5f2T9DN" target="_blank" class="nav-link youtube-btn">
+                    <i class="fab fa-youtube"></i> Subscribe
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Master Programming<br>
+                        <span class="gradient-text">One Line at a Time</span>
+                    </h1>
+                    <p class="hero-description">
+                        Welcome to HA Code Lab, your comprehensive platform for learning programming languages 
+                        and developing essential ICT skills. From beginner to advanced, we've got you covered.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#courses" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i> Explore Courses
+                        </a>
+                        <a href="https://youtube.com/@hacodelab?si=zr6g3zUek5f2T9DN" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-youtube"></i> Watch Tutorials
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h3>5+</h3>
+                                <p>Programming Languages</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <div>
+                                <h3>100+</h3>
+                                <p>Learning Topics</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h3>ICT</h3>
+                                <p>Security Services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-buttons">
+                                <span class="btn-red"></span>
+                                <span class="btn-yellow"></span>
+                                <span class="btn-green"></span>
+                            </div>
+                            <div class="window-title">learning.py</div>
+                        </div>
+                        <div class="window-content">
+                            <pre><code><span class="code-comment"># Welcome to HA Code Lab</span>
+<span class="code-keyword">def</span> <span class="code-function">learn_programming</span>():
+    <span class="code-variable">student</span> = <span class="code-string">"You"</span>
+    <span class="code-variable">skills</span> = [<span class="code-string">"C"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"Java"</span>]
+    
+    <span class="code-keyword">for</span> skill <span class="code-keyword">in</span> skills:
+        <span class="code-function">print</span>(<span class="code-string">f"Mastering {skill}..."</span>)
+    
+    <span class="code-keyword">return</span> <span class="code-string">"Success!"</span>
+
+<span class="code-comment"># Start your journey today!</span>
+<span class="code-function">learn_programming</span>()</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Programming Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Programming Courses</h2>
+                <p class="section-subtitle">Comprehensive learning materials from beginner to advanced levels</p>
+            </div>
+
+            <!-- Course Cards Grid -->
+            <div class="courses-grid">
+                <!-- C Programming Course -->
+                <div class="course-card" data-course="c">
+                    <div class="course-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C Programming</h3>
+                    <p>Master the foundation of programming with C language</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-book"></i> 25+ Topics</span>
+                        <span><i class="fas fa-clock"></i> Beginner to Advanced</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="toggleCourse('c')">
+                        View Course <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- HTML Course -->
+                <div class="course-card" data-course="html">
+                    <div class="course-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Build the structure of modern websites with HTML5</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-book"></i> 20+ Topics</span>
+                        <span><i class="fas fa-clock"></i> Beginner to Advanced</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="toggleCourse('html')">
+                        View Course <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Python Course -->
+                <div class="course-card" data-course="python">
+                    <div class="course-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Learn the most versatile programming language</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-book"></i> 30+ Topics</span>
+                        <span><i class="fas fa-clock"></i> Beginner to Advanced</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="toggleCourse('python')">
+                        View Course <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Java Course -->
+                <div class="course-card" data-course="java">
+                    <div class="course-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Master object-oriented programming with Java</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-book"></i> 28+ Topics</span>
+                        <span><i class="fas fa-clock"></i> Beginner to Advanced</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="toggleCourse('java')">
+                        View Course <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- C++ Course -->
+                <div class="course-card" data-course="cpp">
+                    <div class="course-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>C++</h3>
+                    <p>Advanced programming with C++ language features</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-book"></i> 26+ Topics</span>
+                        <span><i class="fas fa-clock"></i> Beginner to Advanced</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="toggleCourse('cpp')">
+                        View Course <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course Details (Hidden by default, shown when clicked) -->
+            <div id="c-details" class="course-details">
+                <div class="course-details-header">
+                    <h3><i class="fas fa-code"></i> C Programming - Complete Learning Path</h3>
+                    <button class="close-btn" onclick="toggleCourse('c')">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="course-content">
+                    <div class="topic-category">
+                        <h4><i class="fas fa-star"></i> Beginner Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Introduction to C Programming</li>
+                            <li><i class="fas fa-check-circle"></i> Setting Up Development Environment</li>
+                            <li><i class="fas fa-check-circle"></i> Basic Syntax and Structure</li>
+                            <li><i class="fas fa-check-circle"></i> Variables and Data Types</li>
+                            <li><i class="fas fa-check-circle"></i> Operators (Arithmetic, Relational, Logical)</li>
+                            <li><i class="fas fa-check-circle"></i> Input and Output Functions (printf, scanf)</li>
+                            <li><i class="fas fa-check-circle"></i> Control Structures (if, if-else, switch)</li>
+                            <li><i class="fas fa-check-circle"></i> Loops (for, while, do-while)</li>
+                        </ul>
+                    </div>
+                    <div class="topic-category">
+                        <h4><i class="fas fa-chart-line"></i> Intermediate Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Functions and Function Types</li>
+                            <li><i class="fas fa-check-circle"></i> Recursion</li>
+                            <li><i class="fas fa-check-circle"></i> Arrays (1D and 2D)</li>
+                            <li><i class="fas fa-check-circle"></i> Strings and String Functions</li>
+                            <li><i class="fas fa-check-circle"></i> Pointers and Pointer Arithmetic</li>
+                            <li><i class="fas fa-check-circle"></i> Dynamic Memory Allocation</li>
+                            <li><i class="fas fa-check-circle"></i> Structures and Unions</li>
+                            <li><i class="fas fa-check-circle"></i> File Handling</li>
+                        </ul>
+                    </div>
+                    <div class="topic-category">
+                        <h4><i class="fas fa-trophy"></i> Advanced Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Preprocessor Directives</li>
+                            <li><i class="fas fa-check-circle"></i> Command Line Arguments</li>
+                            <li><i class="fas fa-check-circle"></i> Data Structures (Linked Lists, Stacks, Queues)</li>
+                            <li><i class="fas fa-check-circle"></i> Trees and Graphs</li>
+                            <li><i class="fas fa-check-circle"></i> Sorting and Searching Algorithms</li>
+                            <li><i class="fas fa-check-circle"></i> Bitwise Operations</li>
+                            <li><i class="fas fa-check-circle"></i> Memory Management Best Practices</li>
+                            <li><i class="fas fa-check-circle"></i> Project: Building Real-World Applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="html-details" class="course-details">
+                <div class="course-details-header">
+                    <h3><i class="fab fa-html5"></i> HTML - Complete Learning Path</h3>
+                    <button class="close-btn" onclick="toggleCourse('html')">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="course-content">
+                    <div class="topic-category">
+                        <h4><i class="fas fa-star"></i> Beginner Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Introduction to HTML and Web Development</li>
+                            <li><i class="fas fa-check-circle"></i> HTML Document Structure</li>
+                            <li><i class="fas fa-check-circle"></i> HTML Elements and Tags</li>
+                            <li><i class="fas fa-check-circle"></i> Headings and Paragraphs</li>
+                            <li><i class="fas fa-check-circle"></i> Text Formatting (bold, italic, underline)</li>
+                            <li><i class="fas fa-check-circle"></i> Links and Anchors</li>
+                            <li><i class="fas fa-check-circle"></i> Images and Multimedia</li>
+                            <li><i class="fas fa-check-circle"></i> Lists (ordered, unordered, description)</li>
+                        </ul>
+                    </div>
+                    <div class="topic-category">
+                        <h4><i class="fas fa-chart-line"></i> Intermediate Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> HTML Tables</li>
+                            <li><i class="fas fa-check-circle"></i> Forms and Input Elements</li>
+                            <li><i class="fas fa-check-circle"></i> Form Validation Attributes</li>
+                            <li><i class="fas fa-check-circle"></i> Semantic HTML5 Elements</li>
+                            <li><i class="fas fa-check-circle"></i> Audio and Video Elements</li>
+                            <li><i class="fas fa-check-circle"></i> Canvas and SVG Graphics</li>
+                            <li><i class="fas fa-check-circle"></i> HTML Entities and Symbols</li>
+                            <li><i class="fas fa-check-circle"></i> iFrames and Embedding Content</li>
+                        </ul>
+                    </div>
+                    <div class="topic-category">
+                        <h4><i class="fas fa-trophy"></i> Advanced Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> HTML5 APIs (Geolocation, Web Storage)</li>
+                            <li><i class="fas fa-check-circle"></i> Meta Tags and SEO Optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive Design with HTML</li>
+                            <li><i class="fas fa-check-circle"></i> Accessibility (ARIA labels, semantic markup)</li>
+                            <li><i class="fas fa-check-circle"></i> HTML Best Practices and Standards</li>
+                            <li><i class="fas fa-check-circle"></i> Integration with CSS and JavaScript</li>
+                            <li><i class="fas fa-check-circle"></i> Project: Building Complete Websites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="python-details" class="course-details">
+                <div class="course-details-header">
+                    <h3><i class="fab fa-python"></i> Python - Complete Learning Path</h3>
+                    <button class="close-btn" onclick="toggleCourse('python')">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="course-content">
+                    <div class="topic-category">
+                        <h4><i class="fas fa-star"></i> Beginner Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Introduction to Python Programming</li>
+                            <li><i class="fas fa-check-circle"></i> Installing Python and Setting Up Environment</li>
+                            <li><i class="fas fa-check-circle"></i> Variables and Data Types</li>
+                            <li><i class="fas fa-check-circle"></i> Basic Operators</li>
+                            <li><i class="fas fa-check-circle"></i> Input and Output</li>
+                            <li><i class="fas fa-check-circle"></i> Control Flow (if, elif, else)</li>
+                            <li><i class="fas fa-check-circle"></i> Loops (for, while)</li>
+                            <li><i class="fas fa-check-circle"></i> Functions and Parameters</li>
+                            <li><i class="fas fa-check-circle"></i> Lists and List Operations</li>
+                            <li><i class="fas fa-check-circle"></i> Tuples and Sets</li>
+                        </ul>
+                    </div>
+                    <div class="topic-category">
+                        <h4><i class="fas fa-chart-line"></i> Intermediate Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Dictionaries and Advanced Collections</li>
+                            <li><i class="fas fa-check-circle"></i> String Manipulation</li>
+                            <li><i class="fas fa-check-circle"></i> File Handling (read, write, append)</li>
+                            <li><i class="fas fa-check-circle"></i> Exception Handling</li>
+                            <li><i class="fas fa-check-circle"></i> Modules and Packages</li>
+                            <li><i class="fas fa-check-circle"></i> Object-Oriented Programming (Classes, Objects)</li>
+                            <li><i class="fas fa-check-circle"></i> Inheritance and Polymorphism</li>
+                            <li><i class="fas fa-check-circle"></i> Lambda Functions and Map/Filter/Reduce</li>
+                            <li><i class="fas fa-check-circle"></i> List Comprehensions</li>
+                            <li><i class="fas fa-check-circle"></i> Generators and Iterators</li>
+                        </ul>
+                    </div>
+                    <div class="topic-category">
+                        <h4><i class="fas fa-trophy"></i> Advanced Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Decorators and Context Managers</li>
+                            <li><i class="fas fa-check-circle"></i> Regular Expressions</li>
+                            <li><i class="fas fa-check-circle"></i> Working with JSON and APIs</li>
+                            <li><i class="fas fa-check-circle"></i> Database Operations (SQLite, MySQL)</li>
+                            <li><i class="fas fa-check-circle"></i> Web Scraping (BeautifulSoup, Requests)</li>
+                            <li><i class="fas fa-check-circle"></i> GUI Programming (Tkinter)</li>
+                            <li><i class="fas fa-check-circle"></i> Data Analysis (Pandas, NumPy)</li>
+                            <li><i class="fas fa-check-circle"></i> Web Development (Flask, Django basics)</li>
+                            <li><i class="fas fa-check-circle"></i> Testing and Debugging</li>
+                            <li><i class="fas fa-check-circle"></i> Project: Real-World Python Applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="java-details" class="course-details">
+                <div class="course-details-header">
+                    <h3><i class="fab fa-java"></i> Java - Complete Learning Path</h3>
+                    <button class="close-btn" onclick="toggleCourse('java')">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="course-content">
+                    <div class="topic-category">
+                        <h4><i class="fas fa-star"></i> Beginner Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Introduction to Java and JVM</li>
+                            <li><i class="fas fa-check-circle"></i> Setting Up Java Development Kit (JDK)</li>
+                            <li><i class="fas fa-check-circle"></i> Basic Syntax and Program Structure</li>
+                            <li><i class="fas fa-check-circle"></i> Variables and Data Types</li>
+                            <li><i class="fas fa-check-circle"></i> Operators and Expressions</li>
+                            <li><i class="fas fa-check-circle"></i> Input and Output</li>
+                            <li><i class="fas fa-check-circle"></i> Control Statements (if, switch)</li>
+                            <li><i class="fas fa-check-circle"></i> Loops (for, while, do-while)</li>
+                            <li><i class="fas fa-check-circle"></i> Arrays</li>
+                        </ul>
+                    </div>
+                    <div class="topic-category">
+                        <h4><i class="fas fa-chart-line"></i> Intermediate Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Object-Oriented Programming Concepts</li>
+                            <li><i class="fas fa-check-circle"></i> Classes and Objects</li>
+                            <li><i class="fas fa-check-circle"></i> Constructors and Methods</li>
+                            <li><i class="fas fa-check-circle"></i> Inheritance and Polymorphism</li>
+                            <li><i class="fas fa-check-circle"></i> Encapsulation and Abstraction</li>
+                            <li><i class="fas fa-check-circle"></i> Interfaces and Abstract Classes</li>
+                            <li><i class="fas fa-check-circle"></i> Exception Handling</li>
+                            <li><i class="fas fa-check-circle"></i> String Handling</li>
+                            <li><i class="fas fa-check-circle"></i> Collections Framework (List, Set, Map)</li>
+                            <li><i class="fas fa-check-circle"></i> File I/O Operations</li>
+                        </ul>
+                    </div>
+                    <div class="topic-category">
+                        <h4><i class="fas fa-trophy"></i> Advanced Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Multithreading and Concurrency</li>
+                            <li><i class="fas fa-check-circle"></i> Generics</li>
+                            <li><i class="fas fa-check-circle"></i> Lambda Expressions and Streams</li>
+                            <li><i class="fas fa-check-circle"></i> JDBC (Database Connectivity)</li>
+                            <li><i class="fas fa-check-circle"></i> Networking and Sockets</li>
+                            <li><i class="fas fa-check-circle"></i> Java Swing and JavaFX (GUI)</li>
+                            <li><i class="fas fa-check-circle"></i> Design Patterns</li>
+                            <li><i class="fas fa-check-circle"></i> Spring Framework Basics</li>
+                            <li><i class="fas fa-check-circle"></i> Project: Building Enterprise Applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cpp-details" class="course-details">
+                <div class="course-details-header">
+                    <h3><i class="fas fa-code-branch"></i> C++ - Complete Learning Path</h3>
+                    <button class="close-btn" onclick="toggleCourse('cpp')">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="course-content">
+                    <div class="topic-category">
+                        <h4><i class="fas fa-star"></i> Beginner Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Introduction to C++ Programming</li>
+                            <li><i class="fas fa-check-circle"></i> Setting Up C++ Environment</li>
+                            <li><i class="fas fa-check-circle"></i> Basic Syntax and Structure</li>
+                            <li><i class="fas fa-check-circle"></i> Variables and Data Types</li>
+                            <li><i class="fas fa-check-circle"></i> Operators</li>
+                            <li><i class="fas fa-check-circle"></i> Input/Output Streams (cin, cout)</li>
+                            <li><i class="fas fa-check-circle"></i> Control Structures</li>
+                            <li><i class="fas fa-check-circle"></i> Loops</li>
+                            <li><i class="fas fa-check-circle"></i> Functions</li>
+                        </ul>
+                    </div>
+                    <div class="topic-category">
+                        <h4><i class="fas fa-chart-line"></i> Intermediate Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Arrays and Strings</li>
+                            <li><i class="fas fa-check-circle"></i> Pointers and References</li>
+                            <li><i class="fas fa-check-circle"></i> Dynamic Memory Management</li>
+                            <li><i class="fas fa-check-circle"></i> Object-Oriented Programming</li>
+                            <li><i class="fas fa-check-circle"></i> Classes and Objects</li>
+                            <li><i class="fas fa-check-circle"></i> Constructors and Destructors</li>
+                            <li><i class="fas fa-check-circle"></i> Inheritance and Polymorphism</li>
+                            <li><i class="fas fa-check-circle"></i> Operator Overloading</li>
+                            <li><i class="fas fa-check-circle"></i> File Handling</li>
+                        </ul>
+                    </div>
+                    <div class="topic-category">
+                        <h4><i class="fas fa-trophy"></i> Advanced Level</h4>
+                        <ul class="topics-list">
+                            <li><i class="fas fa-check-circle"></i> Templates and Generic Programming</li>
+                            <li><i class="fas fa-check-circle"></i> Standard Template Library (STL)</li>
+                            <li><i class="fas fa-check-circle"></i> Exception Handling</li>
+                            <li><i class="fas fa-check-circle"></i> Namespaces</li>
+                            <li><i class="fas fa-check-circle"></i> Smart Pointers</li>
+                            <li><i class="fas fa-check-circle"></i> Move Semantics and Rvalue References</li>
+                            <li><i class="fas fa-check-circle"></i> Multithreading and Concurrency</li>
+                            <li><i class="fas fa-check-circle"></i> Lambda Expressions</li>
+                            <li><i class="fas fa-check-circle"></i> Design Patterns in C++</li>
+                            <li><i class="fas fa-check-circle"></i> Project: Advanced C++ Applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ICT Services Section -->
+    <section id="ict-services" class="ict-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ICT & Security Services</h2>
+                <p class="section-subtitle">Professional IT solutions and cybersecurity expertise</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>ICT Services</h3>
+                    <p>
+                        We provide comprehensive ICT services including network setup and configuration, 
+                        system administration, IT infrastructure planning, software installation and maintenance, 
+                        and technical support. Our services help businesses and individuals leverage technology 
+                        for improved productivity and efficiency.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Network Infrastructure</li>
+                        <li><i class="fas fa-check"></i> System Administration</li>
+                        <li><i class="fas fa-check"></i> Technical Support</li>
+                        <li><i class="fas fa-check"></i> Hardware & Software Solutions</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>
+                        Protect your digital assets with our cybersecurity services. We offer security assessments, 
+                        vulnerability testing, security awareness training, incident response, and implementation of 
+                        security best practices. Stay safe from cyber threats with our expert guidance.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Security Assessments</li>
+                        <li><i class="fas fa-check"></i> Threat Detection & Prevention</li>
+                        <li><i class="fas fa-check"></i> Security Awareness Training</li>
+                        <li><i class="fas fa-check"></i> Incident Response</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>IT Security Services</h3>
+                    <p>
+                        Our IT security services encompass data protection, backup solutions, access control 
+                        management, security policy development, and compliance consulting. We help you build 
+                        a robust security posture to protect your organization's critical information and systems.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Data Protection & Backup</li>
+                        <li><i class="fas fa-check"></i> Access Control</li>
+                        <li><i class="fas fa-check"></i> Security Policy Development</li>
+                        <li><i class="fas fa-check"></i> Compliance Consulting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Section -->
+    <section class="youtube-section">
+        <div class="container">
+            <div class="youtube-content">
+                <div class="youtube-text">
+                    <h2>Join Our YouTube Community</h2>
+                    <p>
+                        Get access to free video tutorials, coding challenges, live coding sessions, 
+                        and much more. Subscribe to our channel and never miss an update!
+                    </p>
+                    <div class="youtube-stats">
+                        <div class="yt-stat">
+                            <i class="fas fa-video"></i>
+                            <span>Regular Tutorials</span>
+                        </div>
+                        <div class="yt-stat">
+                            <i class="fas fa-users"></i>
+                            <span>Growing Community</span>
+                        </div>
+                        <div class="yt-stat">
+                            <i class="fas fa-certificate"></i>
+                            <span>Quality Content</span>
+                        </div>
+                    </div>
+                    <a href="https://youtube.com/@hacodelab?si=zr6g3zUek5f2T9DN" target="_blank" class="btn btn-youtube">
+                        <i class="fab fa-youtube"></i> Subscribe to HA Code Lab
+                    </a>
+                </div>
+                <div class="youtube-embed">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed?listType=user_uploads&list=@hacodelab" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:hafidhomar167@gmail.com">hafidhomar167@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone Numbers</h4>
+                            <a href="tel:+255658502920">+255 658 502 920</a>
+                            <a href="tel:+255676991915">+255 676 991 915</a>
+                            <a href="tel:+255779931058">+255 779 931 058</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Tanzania</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://youtube.com/@hacodelab?si=zr6g3zUek5f2T9DN" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Full Name
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email Address
+                            </label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Message
+                            </label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3><i class="fas fa-code"></i> HA Code Lab</h3>
+                    <p>
+                        Empowering the next generation of programmers and IT professionals through 
+                        quality education and practical learning resources.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#ict-services">ICT Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> hafidhomar167@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +255 658 502 920</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HA Code Lab. All rights reserved.</p>
+                <p class="creator">Website Created by <strong>HAFIDH OMAR OTHMAN</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
